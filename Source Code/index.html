@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cultural Heritage: The Great Monuments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-stone-50">
+    <!-- Navigation -->
+    <nav class="bg-amber-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">HeritageTrail</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-amber-200">About</a>
+                <a href="#history" class="hover:text-amber-200">History</a>
+                <a href="#gallery" class="hover:text-amber-200">Gallery</a>
+                <a href="#visit" class="hover:text-amber-200">Visit</a>
+            </div>
+            <button class="md:hidden" id="menu-toggle">☰</button>
+        </div>
+        <div class="md:hidden hidden px-6 py-2 bg-amber-800" id="mobile-menu">
+            <a href="#about" class="block py-2 hover:text-amber-200">About</a>
+            <a href="#history" class="block py-2 hover:text-amber-200">History</a>
+            <a href="#gallery" class="block py-2 hover:text-amber-200">Gallery</a>
+            <a href="#visit" class="block py-2 hover:text-amber-200">Visit</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c6a6c49a-2dd7-4a20-a838-f3711a1fe51c.png" alt="Dramatic view of the Parthenon at sunset with golden light illuminating the ancient columns" class="absolute w-full h-full object-cover -z-10" />
+        <div class="text-center text-white max-w-4xl px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">The Parthenon</h1>
+            <p class="text-xl md:text-2xl mb-8">Athens' Crown Jewel of Ancient Greek Architecture</p>
+            <a href="#about" class="bg-amber-700 hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-medium transition duration-300">Explore History</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-4xl font-bold mb-12 text-center text-amber-900">The Symbol of Ancient Greece</h2>
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/27108799-ed76-4f72-9e14-48ac9ee46f9f.png" alt="Detailed close-up of Parthenon's Doric columns with intricate carvings visible" class="rounded-lg shadow-xl" />
+                </div>
+                <div class="md:w-1/2">
+                    <p class="mb-4">The Parthenon is a former temple on the Athenian Acropolis, Greece, dedicated to the goddess Athena during the fifth century BC. It stands as a symbol of ancient Greece, Athenian democracy, and Western civilization.</p>
+                    <p class="mb-4">Constructed between 447-432 BCE, the Parthenon represents the culmination of the Doric order and is considered the finest example of Greek architecture.</p>
+                    <p class="mb-4">Despite damage over centuries, including the 1687 explosion that severely damaged much of the structure, the Parthenon remains a powerful symbol of Greece's glorious past and a testament to human creativity.</p>
+                    <div class="flex items-center mt-6">
+                        <div class="bg-amber-100 p-4 rounded-lg mr-4">
+                            <h3 class="font-bold text-lg text-amber-900">5th Century BCE</h3>
+                            <p class="text-sm">Construction Period</p>
+                        </div>
+                        <div class="bg-amber-100 p-4 rounded-lg">
+                            <h3 class="font-bold text-lg text-amber-900">UNESCO</h3>
+                            <p class="text-sm">World Heritage Site</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Timeline -->
+    <section id="history" class="py-20 bg-stone-100">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-4xl font-bold mb-12 text-center text-amber-900">Historical Journey</h2>
+            <div class="relative">
+                <div class="border-l-2 border-amber-300 ml-4 pl-8 space-y-12">
+                    <div class="relative timeline-item">
+                        <h3 class="text-2xl font-bold mb-2 text-amber-800">447 BCE</h3>
+                        <p class="mb-2">Construction begins under the direction of the sculptor Phidias and architects Ictinus and Callicrates, commissioned by Pericles.</p>
+                    </div>
+                    <div class="relative timeline-item">
+                        <h3 class="text-2xl font-bold mb-2 text-amber-800">432 BCE</h3>
+                        <p class="mb-2">Completion of the Parthenon, including Phidias' massive chryselephantine statue of Athena Parthenos.</p>
+                    </div>
+                    <div class="relative timeline-item">
+                        <h3 class="text-2xl font-bold mb-2 text-amber-800">5th Century CE</h3>
+                        <p class="mb-2">Conversion into a Christian church dedicated to the Virgin Mary.</p>
+                    </div>
+                    <div class="relative timeline-item">
+                        <h3 class="text-2xl font-bold mb-2 text-amber-800">1687</h3>
+                        <p class="mb-2">Major damage occurs when Venetian bombardment caused gunpowder stored inside to explode.</p>
+                    </div>
+                    <div class="relative timeline-item">
+                        <h3 class="text-2xl font-bold mb-2 text-amber-800">1806-1812</h3>
+                        <p class="mb-2">Many sculptures are removed by Lord Elgin and transferred to the British Museum.</p>
+                    </div>
+                    <div class="relative timeline-item">
+                        <h3 class="text-2xl font-bold mb-2 text-amber-800">1983 - Present</h3>
+                        <p class="mb-2">Ongoing restoration project to preserve and restore the ancient structure using modern techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-4xl font-bold mb-12 text-center text-amber-900">Iconic Views</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-lg gallery-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/be559284-49f5-4ce4-ad2f-666048f65822.png" alt="Aerial view of the Parthenon atop the Acropolis with Athens city in the background" class="w-full h-64 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Commanding View</h3>
+                        <p>The Parthenon dominates the Athenian skyline from its position on the Acropolis.</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg gallery-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/38ae094e-fb2d-4b19-b5ba-90a29d731281.png" alt="Detailed view of the Parthenon frieze showing horsemen in the Panathenaic procession" class="w-full h-64 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Intricate Sculptures</h3>
+                        <p>The beautifully carved friezes depict mythological scenes and civic ceremonies.</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg gallery-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e4a2b69f-ef54-47f5-a935-5c4f12e70eeb.png" alt="Night illumination of the Parthenon with dramatic lighting against dark blue sky" class="w-full h-64 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Night Illumination</h3>
+                        <p>Special lighting highlights the architectural details of the temple at night.</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg gallery-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bebb53fd-cf49-44b8-b5aa-ed40802bff96.png" alt="3D reconstruction visualization showing the Parthenon in its original colorful painted state" class="w-full h-64 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Original Colors</h3>
+                        <p>Digital reconstruction shows how brightly painted the temple originally appeared.</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg gallery-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f110edb0-bd47-489e-afd5-2518e4c6c68b.png" alt="Restoration work in progress with archaeologists carefully positioning an ancient column drum" class="w-full h-64 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Conservation Efforts</h3>
+                        <p>Skilled workers use original techniques combined with modern technology in the ongoing restoration.</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg gallery-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b38a505e-ff71-4c57-975d-05925b073d57.png" alt="Interior of the New Acropolis Museum with natural light showcasing the Parthenon Marbles" class="w-full h-64 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">The Acropolis Museum</h3>
+                        <p>Many original sculptures are preserved in the modern museum just below the Acropolis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visitor Information -->
+    <section id="visit" class="py-20 bg-stone-100">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-4xl font-bold mb-12 text-center text-amber-900">Plan Your Visit</h2>
+            <div class="md:flex gap-8">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+                        <h3 class="text-2xl font-bold mb-4 text-amber-800">Practical Information</h3>
+                        <div class="mb-6">
+                            <h4 class="font-bold mb-2">Opening Hours</h4>
+                            <p>8:00 AM - 8:00 PM (April - October)<br>
+                            8:00 AM - 5:00 PM (November - March)</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-bold mb-2">Admission Fees</h4>
+                            <p>Adults: €20<br>
+                            Students/Seniors: €10<br>
+                            Children (under 18): Free</p>
+                            <p class="text-sm mt-2">Combined ticket includes access to other archaeological sites.</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-bold mb-2">Accessibility</h4>
+                            <p>The site has wheelchair access via a special entrance on the north slope. An elevator is available at the New Acropolis Museum.</p>
+                        </div>
+                        <button id="virtual-tour-btn" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-lg transition duration-300 w-full">Start Virtual Tour</button>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+                        <h3 class="text-2xl font-bold mb-4 text-amber-800">Location</h3>
+                        <div id="map" class="h-64 mb-6 bg-stone-200 rounded-lg flex items-center justify-center">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/db934651-ae54-43ab-89c1-7eff4b25d3cb.png" alt="Map showing the Acropolis location in central Athens with nearby landmarks highlighted" class="w-full h-full object-cover rounded-lg" />
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-bold mb-2">Directions</h4>
+                            <p>The Acropolis is located in central Athens. The main entrance is on the west side, near the metro station "Acropoli" (Red Line).</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">Tips</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Visit early morning or late afternoon to avoid crowds</li>
+                                <li>Wear comfortable shoes as the terrain is uneven</li>
+                                <li>Bring water, especially in summer months</li>
+                                <li>Consider guided tours for deeper insights</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour Modal -->
+    <div id="virtual-tour-modal" class="fixed inset-0 bg-black bg-opacity-75 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-4xl w-full relative max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold">Virtual Tour: The Parthenon</h3>
+                    <button id="close-modal" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <div class="aspect-video bg-stone-200 mb-4 flex items-center justify-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6355115a-12cc-4d65-8800-06ce007d6f28.png" alt="360-degree panoramic virtual tour view of the Parthenon with controls for navigation" class="w-full h-full object-cover" />
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-stone-100 p-4 rounded-lg cursor-pointer hover:bg-amber-100">
+                        <h4 class="font-bold mb-2">West Facade</h4>
+                        <p class="text-sm">View the main entrance with its impressive columns.</p>
+                    </div>
+                    <div class="bg-stone-100 p-4 rounded-lg cursor-pointer hover:bg-amber-100">
+                        <h4 class="font-bold mb-2">East Pediment</h4>
+                        <p class="text-sm">Explore the sculptures depicting Athena's birth.</p>
+                    </div>
+                    <div class="bg-stone-100 p-4 rounded-lg cursor-pointer hover:bg-amber-100">
+                        <h4 class="font-bold mb-2">Interior</h4>
+                        <p class="text-sm">See the chamber that once housed Athena's statue.</p>
+                    </div>
+                </div>
+                <div class="mt-6 flex justify-center">
+                    <button class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-2 rounded-lg transition duration-300">Start Full Tour</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="md:flex justify-between mb-8">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">HeritageTrail</h3>
+                    <p>Exploring the world's greatest cultural landmarks and their stories.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="font-bold mb-4">Explore</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-amber-200 hover:text-white">Monuments</a></li>
+                            <li><a href="#" class="text-amber-200 hover:text-white">World Heritage</a></li>
+                            <li><a href="#" class="text-amber-200 hover:text-white">Guided Tours</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4">Learn</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-amber-200 hover:text-white">History</a></li>
+                            <li><a href="#" class="text-amber-200 hover:text-white">Architecture</a></li>
+                            <li><a href="#" class="text-amber-200 hover:text-white">Conservation</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4">Connect</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-amber-200 hover:text-white">Contact Us</a></li>
+                            <li><a href="#" class="text-amber-200 hover:text-white">Newsletter</a></li>
+                            <li><a href="#" class="text-amber-200 hover:text-white">Contribute</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-amber-800 pt-8 text-center text-sm">
+                <p>© 2023 HeritageTrail. All rights reserved. Dedicated to preserving and sharing the world's cultural heritage.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="styles.css"></script>
+</body>
+</html>
